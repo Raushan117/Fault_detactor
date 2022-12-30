@@ -1,0 +1,400 @@
+[2022-12-30 12:06:33,099]22 root -INFO -Exporting collection data as pandas dataframe
+[2022-12-30 12:06:33,099]24 root -INFO -Reading data from database: APS and collection name Sensor
+[2022-12-30 12:06:36,660]26 root -INFO -Found column: Index(['_id', 'class', 'aa_000', 'ab_000', 'ac_000', 'ad_000', 'ae_000',
+       'af_000', 'ag_000', 'ag_001',
+       ...
+       'ee_002', 'ee_003', 'ee_004', 'ee_005', 'ee_006', 'ee_007', 'ee_008',
+       'ee_009', 'ef_000', 'eg_000'],
+      dtype='object', length=172)
+[2022-12-30 12:06:36,660]28 root -INFO -Dropping column: _id
+[2022-12-30 12:06:36,860]30 root -INFO -Row & column in df : (36188, 171)
+[2022-12-30 12:06:36,860]28 root -INFO -Save data in feature store
+[2022-12-30 12:06:37,424]34 root -INFO -Create feature store folder if not available
+[2022-12-30 12:06:37,425]38 root -INFO -Save df to feature store folder
+[2022-12-30 12:06:39,910]43 root -INFO -split dataset into train and test set
+[2022-12-30 12:06:40,549]47 root -INFO -create dataset directory folder if not available
+[2022-12-30 12:06:40,549]52 root -INFO -Save df to feature store folder
+[2022-12-30 12:06:42,774]64 root -INFO -Data ingestion artifact: DataIngestionArtifact(feature_store_file_path='/config/workspace/artifact/12302022__120633/data_ingestion/feature_store/sensor.csv', train_file_path='/config/workspace/artifact/12302022__120633/data_ingestion/dataset/train.csv', test_file_path='/config/workspace/artifact/12302022__120633/data_ingestion/dataset/test.csv')
+[2022-12-30 12:06:43,203]22 root -INFO -Exporting collection data as pandas dataframe
+[2022-12-30 12:06:43,203]24 root -INFO -Reading data from database: APS and collection name Sensor
+[2022-12-30 12:06:46,698]26 root -INFO -Found column: Index(['_id', 'class', 'aa_000', 'ab_000', 'ac_000', 'ad_000', 'ae_000',
+       'af_000', 'ag_000', 'ag_001',
+       ...
+       'ee_002', 'ee_003', 'ee_004', 'ee_005', 'ee_006', 'ee_007', 'ee_008',
+       'ee_009', 'ef_000', 'eg_000'],
+      dtype='object', length=172)
+[2022-12-30 12:06:46,698]28 root -INFO -Dropping column: _id
+[2022-12-30 12:06:46,896]30 root -INFO -Row & column in df : (36188, 171)
+[2022-12-30 12:06:46,896]28 root -INFO -Save data in feature store
+[2022-12-30 12:06:47,430]34 root -INFO -Create feature store folder if not available
+[2022-12-30 12:06:47,430]38 root -INFO -Save df to feature store folder
+[2022-12-30 12:06:50,016]43 root -INFO -split dataset into train and test set
+[2022-12-30 12:06:50,653]47 root -INFO -create dataset directory folder if not available
+[2022-12-30 12:06:50,653]52 root -INFO -Save df to feature store folder
+[2022-12-30 12:06:52,890]64 root -INFO -Data ingestion artifact: DataIngestionArtifact(feature_store_file_path='/config/workspace/artifact/12302022__120633/data_ingestion/feature_store/sensor.csv', train_file_path='/config/workspace/artifact/12302022__120633/data_ingestion/dataset/train.csv', test_file_path='/config/workspace/artifact/12302022__120633/data_ingestion/dataset/test.csv')
+[2022-12-30 12:06:53,276]21 root -INFO ->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Validation <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2022-12-30 12:06:53,277]110 root -INFO -Reading base dataframe
+[2022-12-30 12:06:56,324]113 root -INFO -Replace na value in base df
+[2022-12-30 12:06:56,324]115 root -INFO -Drop null values colums from base df
+[2022-12-30 12:06:57,261]44 root -INFO -selecting column name which contains null above to 0.2
+[2022-12-30 12:06:57,263]47 root -INFO -Columns to drop: ['ab_000', 'ad_000', 'bk_000', 'bl_000', 'bm_000', 'bn_000', 'bo_000', 'bp_000', 'bq_000', 'br_000', 'cf_000', 'cg_000', 'ch_000', 'co_000', 'cr_000', 'ct_000', 'cu_000', 'cv_000', 'cx_000', 'cy_000', 'cz_000', 'da_000', 'db_000', 'dc_000']
+[2022-12-30 12:06:57,352]118 root -INFO -Reading train dataframe
+[2022-12-30 12:06:57,744]120 root -INFO -Reading test dataframe
+[2022-12-30 12:06:57,853]123 root -INFO -Drop null values colums from train df
+[2022-12-30 12:06:57,865]44 root -INFO -selecting column name which contains null above to 0.2
+[2022-12-30 12:06:57,865]47 root -INFO -Columns to drop: ['ab_000', 'ad_000', 'bk_000', 'bl_000', 'bm_000', 'bn_000', 'bo_000', 'bp_000', 'bq_000', 'br_000', 'cf_000', 'cg_000', 'ch_000', 'co_000', 'cr_000', 'ct_000', 'cu_000', 'cv_000', 'cx_000', 'cy_000', 'cz_000', 'da_000', 'db_000', 'dc_000']
+[2022-12-30 12:06:57,874]125 root -INFO -Drop null values colums from test df
+[2022-12-30 12:06:57,879]44 root -INFO -selecting column name which contains null above to 0.2
+[2022-12-30 12:06:57,879]47 root -INFO -Columns to drop: ['ab_000', 'ad_000', 'bk_000', 'bl_000', 'bm_000', 'bn_000', 'bo_000', 'bp_000', 'bq_000', 'br_000', 'cf_000', 'cg_000', 'ch_000', 'co_000', 'cr_000', 'ct_000', 'cu_000', 'cv_000', 'cx_000', 'cy_000', 'cz_000', 'da_000', 'db_000', 'dc_000']
+[2022-12-30 12:07:04,333]134 root -INFO -Is all required columns present in train df
+[2022-12-30 12:07:04,334]136 root -INFO -Is all required columns present in test df
+[2022-12-30 12:07:04,334]140 root -INFO -As all column are available in train df hence detecting data drift
+[2022-12-30 12:07:04,334]88 root -INFO -Hypothesis class: object, object 
+[2022-12-30 12:07:04,470]88 root -INFO -Hypothesis aa_000: float64, float64 
+[2022-12-30 12:07:04,480]88 root -INFO -Hypothesis ac_000: float64, float64 
+[2022-12-30 12:07:04,521]88 root -INFO -Hypothesis ae_000: float64, float64 
+[2022-12-30 12:07:04,558]88 root -INFO -Hypothesis af_000: float64, float64 
+[2022-12-30 12:07:04,594]88 root -INFO -Hypothesis ag_000: float64, float64 
+[2022-12-30 12:07:04,630]88 root -INFO -Hypothesis ag_001: float64, float64 
+[2022-12-30 12:07:04,666]88 root -INFO -Hypothesis ag_002: float64, float64 
+[2022-12-30 12:07:04,707]88 root -INFO -Hypothesis ag_003: float64, float64 
+[2022-12-30 12:07:04,746]88 root -INFO -Hypothesis ag_004: float64, float64 
+[2022-12-30 12:07:04,756]88 root -INFO -Hypothesis ag_005: float64, float64 
+[2022-12-30 12:07:04,768]88 root -INFO -Hypothesis ag_006: float64, float64 
+[2022-12-30 12:07:04,779]88 root -INFO -Hypothesis ag_007: float64, float64 
+[2022-12-30 12:07:04,789]88 root -INFO -Hypothesis ag_008: float64, float64 
+[2022-12-30 12:07:04,830]88 root -INFO -Hypothesis ag_009: float64, float64 
+[2022-12-30 12:07:04,837]88 root -INFO -Hypothesis ah_000: float64, float64 
+[2022-12-30 12:07:04,849]88 root -INFO -Hypothesis ai_000: float64, float64 
+[2022-12-30 12:07:04,887]88 root -INFO -Hypothesis aj_000: float64, float64 
+[2022-12-30 12:07:04,925]88 root -INFO -Hypothesis ak_000: float64, float64 
+[2022-12-30 12:07:04,962]88 root -INFO -Hypothesis al_000: float64, float64 
+[2022-12-30 12:07:05,001]88 root -INFO -Hypothesis am_0: float64, float64 
+[2022-12-30 12:07:05,041]88 root -INFO -Hypothesis an_000: float64, float64 
+[2022-12-30 12:07:05,052]88 root -INFO -Hypothesis ao_000: float64, float64 
+[2022-12-30 12:07:05,063]88 root -INFO -Hypothesis ap_000: float64, float64 
+[2022-12-30 12:07:05,074]88 root -INFO -Hypothesis aq_000: float64, float64 
+[2022-12-30 12:07:05,085]88 root -INFO -Hypothesis ar_000: float64, float64 
+[2022-12-30 12:07:05,122]88 root -INFO -Hypothesis as_000: float64, float64 
+[2022-12-30 12:07:05,158]88 root -INFO -Hypothesis at_000: float64, float64 
+[2022-12-30 12:07:05,195]88 root -INFO -Hypothesis au_000: float64, float64 
+[2022-12-30 12:07:05,232]88 root -INFO -Hypothesis av_000: float64, float64 
+[2022-12-30 12:07:05,272]88 root -INFO -Hypothesis ax_000: float64, float64 
+[2022-12-30 12:07:05,313]88 root -INFO -Hypothesis ay_000: float64, float64 
+[2022-12-30 12:07:05,350]88 root -INFO -Hypothesis ay_001: float64, float64 
+[2022-12-30 12:07:05,386]88 root -INFO -Hypothesis ay_002: float64, float64 
+[2022-12-30 12:07:05,423]88 root -INFO -Hypothesis ay_003: float64, float64 
+[2022-12-30 12:07:05,460]88 root -INFO -Hypothesis ay_004: float64, float64 
+[2022-12-30 12:07:05,497]88 root -INFO -Hypothesis ay_005: float64, float64 
+[2022-12-30 12:07:05,505]88 root -INFO -Hypothesis ay_006: float64, float64 
+[2022-12-30 12:07:05,514]88 root -INFO -Hypothesis ay_007: float64, float64 
+[2022-12-30 12:07:05,524]88 root -INFO -Hypothesis ay_008: float64, float64 
+[2022-12-30 12:07:05,536]88 root -INFO -Hypothesis ay_009: float64, float64 
+[2022-12-30 12:07:05,577]88 root -INFO -Hypothesis az_000: float64, float64 
+[2022-12-30 12:07:05,587]88 root -INFO -Hypothesis az_001: float64, float64 
+[2022-12-30 12:07:05,597]88 root -INFO -Hypothesis az_002: float64, float64 
+[2022-12-30 12:07:05,606]88 root -INFO -Hypothesis az_003: float64, float64 
+[2022-12-30 12:07:05,617]88 root -INFO -Hypothesis az_004: float64, float64 
+[2022-12-30 12:07:05,627]88 root -INFO -Hypothesis az_005: float64, float64 
+[2022-12-30 12:07:05,638]88 root -INFO -Hypothesis az_006: float64, float64 
+[2022-12-30 12:07:05,647]88 root -INFO -Hypothesis az_007: float64, float64 
+[2022-12-30 12:07:05,685]88 root -INFO -Hypothesis az_008: float64, float64 
+[2022-12-30 12:07:05,721]88 root -INFO -Hypothesis az_009: float64, float64 
+[2022-12-30 12:07:05,757]88 root -INFO -Hypothesis ba_000: float64, float64 
+[2022-12-30 12:07:05,768]88 root -INFO -Hypothesis ba_001: float64, float64 
+[2022-12-30 12:07:05,779]88 root -INFO -Hypothesis ba_002: float64, float64 
+[2022-12-30 12:07:05,789]88 root -INFO -Hypothesis ba_003: float64, float64 
+[2022-12-30 12:07:05,832]88 root -INFO -Hypothesis ba_004: float64, float64 
+[2022-12-30 12:07:05,842]88 root -INFO -Hypothesis ba_005: float64, float64 
+[2022-12-30 12:07:05,885]88 root -INFO -Hypothesis ba_006: float64, float64 
+[2022-12-30 12:07:05,896]88 root -INFO -Hypothesis ba_007: float64, float64 
+[2022-12-30 12:07:05,905]88 root -INFO -Hypothesis ba_008: float64, float64 
+[2022-12-30 12:07:05,949]88 root -INFO -Hypothesis ba_009: float64, float64 
+[2022-12-30 12:07:05,988]88 root -INFO -Hypothesis bb_000: float64, float64 
+[2022-12-30 12:07:05,999]88 root -INFO -Hypothesis bc_000: float64, float64 
+[2022-12-30 12:07:06,008]88 root -INFO -Hypothesis bd_000: float64, float64 
+[2022-12-30 12:07:06,017]88 root -INFO -Hypothesis be_000: float64, float64 
+[2022-12-30 12:07:06,026]88 root -INFO -Hypothesis bf_000: float64, float64 
+[2022-12-30 12:07:06,066]88 root -INFO -Hypothesis bg_000: float64, float64 
+[2022-12-30 12:07:06,077]88 root -INFO -Hypothesis bh_000: float64, float64 
+[2022-12-30 12:07:06,087]88 root -INFO -Hypothesis bi_000: float64, float64 
+[2022-12-30 12:07:06,098]88 root -INFO -Hypothesis bj_000: float64, float64 
+[2022-12-30 12:07:06,109]88 root -INFO -Hypothesis bs_000: float64, float64 
+[2022-12-30 12:07:06,152]88 root -INFO -Hypothesis bt_000: float64, float64 
+[2022-12-30 12:07:06,163]88 root -INFO -Hypothesis bu_000: float64, float64 
+[2022-12-30 12:07:06,173]88 root -INFO -Hypothesis bv_000: float64, float64 
+[2022-12-30 12:07:06,184]88 root -INFO -Hypothesis bx_000: float64, float64 
+[2022-12-30 12:07:06,194]88 root -INFO -Hypothesis by_000: float64, float64 
+[2022-12-30 12:07:06,205]88 root -INFO -Hypothesis bz_000: float64, float64 
+[2022-12-30 12:07:06,214]88 root -INFO -Hypothesis ca_000: float64, float64 
+[2022-12-30 12:07:06,225]88 root -INFO -Hypothesis cb_000: float64, float64 
+[2022-12-30 12:07:06,267]88 root -INFO -Hypothesis cc_000: float64, float64 
+[2022-12-30 12:07:06,278]88 root -INFO -Hypothesis cd_000: float64, float64 
+[2022-12-30 12:07:06,315]88 root -INFO -Hypothesis ce_000: float64, float64 
+[2022-12-30 12:07:06,358]88 root -INFO -Hypothesis ci_000: float64, float64 
+[2022-12-30 12:07:06,369]88 root -INFO -Hypothesis cj_000: float64, float64 
+[2022-12-30 12:07:06,408]88 root -INFO -Hypothesis ck_000: float64, float64 
+[2022-12-30 12:07:06,419]88 root -INFO -Hypothesis cl_000: float64, float64 
+[2022-12-30 12:07:06,425]88 root -INFO -Hypothesis cm_000: float64, float64 
+[2022-12-30 12:07:06,432]88 root -INFO -Hypothesis cn_000: float64, float64 
+[2022-12-30 12:07:06,469]88 root -INFO -Hypothesis cn_001: float64, float64 
+[2022-12-30 12:07:06,507]88 root -INFO -Hypothesis cn_002: float64, float64 
+[2022-12-30 12:07:06,547]88 root -INFO -Hypothesis cn_003: float64, float64 
+[2022-12-30 12:07:06,590]88 root -INFO -Hypothesis cn_004: float64, float64 
+[2022-12-30 12:07:06,601]88 root -INFO -Hypothesis cn_005: float64, float64 
+[2022-12-30 12:07:06,644]88 root -INFO -Hypothesis cn_006: float64, float64 
+[2022-12-30 12:07:06,654]88 root -INFO -Hypothesis cn_007: float64, float64 
+[2022-12-30 12:07:06,664]88 root -INFO -Hypothesis cn_008: float64, float64 
+[2022-12-30 12:07:06,674]88 root -INFO -Hypothesis cn_009: float64, float64 
+[2022-12-30 12:07:06,713]88 root -INFO -Hypothesis cp_000: float64, float64 
+[2022-12-30 12:07:06,752]88 root -INFO -Hypothesis cq_000: float64, float64 
+[2022-12-30 12:07:06,762]88 root -INFO -Hypothesis cs_000: float64, float64 
+[2022-12-30 12:07:06,772]88 root -INFO -Hypothesis cs_001: float64, float64 
+[2022-12-30 12:07:06,782]88 root -INFO -Hypothesis cs_002: float64, float64 
+[2022-12-30 12:07:06,824]88 root -INFO -Hypothesis cs_003: float64, float64 
+[2022-12-30 12:07:06,834]88 root -INFO -Hypothesis cs_004: float64, float64 
+[2022-12-30 12:07:06,845]88 root -INFO -Hypothesis cs_005: float64, float64 
+[2022-12-30 12:07:06,888]88 root -INFO -Hypothesis cs_006: float64, float64 
+[2022-12-30 12:07:06,899]88 root -INFO -Hypothesis cs_007: float64, float64 
+[2022-12-30 12:07:06,909]88 root -INFO -Hypothesis cs_008: float64, float64 
+[2022-12-30 12:07:06,951]88 root -INFO -Hypothesis cs_009: float64, float64 
+[2022-12-30 12:07:06,987]88 root -INFO -Hypothesis dd_000: float64, float64 
+[2022-12-30 12:07:06,997]88 root -INFO -Hypothesis de_000: float64, float64 
+[2022-12-30 12:07:07,005]88 root -INFO -Hypothesis df_000: float64, float64 
+[2022-12-30 12:07:07,042]88 root -INFO -Hypothesis dg_000: float64, float64 
+[2022-12-30 12:07:07,079]88 root -INFO -Hypothesis dh_000: float64, float64 
+[2022-12-30 12:07:07,117]88 root -INFO -Hypothesis di_000: float64, float64 
+[2022-12-30 12:07:07,155]88 root -INFO -Hypothesis dj_000: float64, float64 
+[2022-12-30 12:07:07,194]88 root -INFO -Hypothesis dk_000: float64, float64 
+[2022-12-30 12:07:07,231]88 root -INFO -Hypothesis dl_000: float64, float64 
+[2022-12-30 12:07:07,270]88 root -INFO -Hypothesis dm_000: float64, float64 
+[2022-12-30 12:07:07,308]88 root -INFO -Hypothesis dn_000: float64, float64 
+[2022-12-30 12:07:07,319]88 root -INFO -Hypothesis do_000: float64, float64 
+[2022-12-30 12:07:07,328]88 root -INFO -Hypothesis dp_000: float64, float64 
+[2022-12-30 12:07:07,338]88 root -INFO -Hypothesis dq_000: float64, float64 
+[2022-12-30 12:07:07,376]88 root -INFO -Hypothesis dr_000: float64, float64 
+[2022-12-30 12:07:07,414]88 root -INFO -Hypothesis ds_000: float64, float64 
+[2022-12-30 12:07:07,424]88 root -INFO -Hypothesis dt_000: float64, float64 
+[2022-12-30 12:07:07,434]88 root -INFO -Hypothesis du_000: float64, float64 
+[2022-12-30 12:07:07,447]88 root -INFO -Hypothesis dv_000: float64, float64 
+[2022-12-30 12:07:07,457]88 root -INFO -Hypothesis dx_000: float64, float64 
+[2022-12-30 12:07:07,498]88 root -INFO -Hypothesis dy_000: float64, float64 
+[2022-12-30 12:07:07,538]88 root -INFO -Hypothesis dz_000: float64, float64 
+[2022-12-30 12:07:07,575]88 root -INFO -Hypothesis ea_000: float64, float64 
+[2022-12-30 12:07:07,612]88 root -INFO -Hypothesis eb_000: float64, float64 
+[2022-12-30 12:07:07,653]88 root -INFO -Hypothesis ec_00: float64, float64 
+[2022-12-30 12:07:07,663]88 root -INFO -Hypothesis ed_000: float64, float64 
+[2022-12-30 12:07:07,672]88 root -INFO -Hypothesis ee_000: float64, float64 
+[2022-12-30 12:07:07,683]88 root -INFO -Hypothesis ee_001: float64, float64 
+[2022-12-30 12:07:07,694]88 root -INFO -Hypothesis ee_002: float64, float64 
+[2022-12-30 12:07:07,704]88 root -INFO -Hypothesis ee_003: float64, float64 
+[2022-12-30 12:07:07,715]88 root -INFO -Hypothesis ee_004: float64, float64 
+[2022-12-30 12:07:07,725]88 root -INFO -Hypothesis ee_005: float64, float64 
+[2022-12-30 12:07:07,736]88 root -INFO -Hypothesis ee_006: float64, float64 
+[2022-12-30 12:07:07,746]88 root -INFO -Hypothesis ee_007: float64, float64 
+[2022-12-30 12:07:07,756]88 root -INFO -Hypothesis ee_008: float64, float64 
+[2022-12-30 12:07:07,765]88 root -INFO -Hypothesis ee_009: float64, float64 
+[2022-12-30 12:07:07,805]88 root -INFO -Hypothesis ef_000: float64, float64 
+[2022-12-30 12:07:07,842]88 root -INFO -Hypothesis eg_000: float64, float64 
+[2022-12-30 12:07:07,878]143 root -INFO -As all column are available in test df hence detecting data drift
+[2022-12-30 12:07:07,879]88 root -INFO -Hypothesis class: object, object 
+[2022-12-30 12:07:07,956]88 root -INFO -Hypothesis aa_000: float64, float64 
+[2022-12-30 12:07:07,963]88 root -INFO -Hypothesis ac_000: float64, float64 
+[2022-12-30 12:07:07,968]88 root -INFO -Hypothesis ae_000: float64, float64 
+[2022-12-30 12:07:07,984]88 root -INFO -Hypothesis af_000: float64, float64 
+[2022-12-30 12:07:08,000]88 root -INFO -Hypothesis ag_000: float64, float64 
+[2022-12-30 12:07:08,015]88 root -INFO -Hypothesis ag_001: float64, float64 
+[2022-12-30 12:07:08,030]88 root -INFO -Hypothesis ag_002: float64, float64 
+[2022-12-30 12:07:08,034]88 root -INFO -Hypothesis ag_003: float64, float64 
+[2022-12-30 12:07:08,050]88 root -INFO -Hypothesis ag_004: float64, float64 
+[2022-12-30 12:07:08,057]88 root -INFO -Hypothesis ag_005: float64, float64 
+[2022-12-30 12:07:08,064]88 root -INFO -Hypothesis ag_006: float64, float64 
+[2022-12-30 12:07:08,071]88 root -INFO -Hypothesis ag_007: float64, float64 
+[2022-12-30 12:07:08,077]88 root -INFO -Hypothesis ag_008: float64, float64 
+[2022-12-30 12:07:08,083]88 root -INFO -Hypothesis ag_009: float64, float64 
+[2022-12-30 12:07:08,088]88 root -INFO -Hypothesis ah_000: float64, float64 
+[2022-12-30 12:07:08,095]88 root -INFO -Hypothesis ai_000: float64, float64 
+[2022-12-30 12:07:08,111]88 root -INFO -Hypothesis aj_000: float64, float64 
+[2022-12-30 12:07:08,128]88 root -INFO -Hypothesis ak_000: float64, float64 
+[2022-12-30 12:07:08,144]88 root -INFO -Hypothesis al_000: float64, float64 
+[2022-12-30 12:07:08,149]88 root -INFO -Hypothesis am_0: float64, float64 
+[2022-12-30 12:07:08,154]88 root -INFO -Hypothesis an_000: float64, float64 
+[2022-12-30 12:07:08,161]88 root -INFO -Hypothesis ao_000: float64, float64 
+[2022-12-30 12:07:08,168]88 root -INFO -Hypothesis ap_000: float64, float64 
+[2022-12-30 12:07:08,175]88 root -INFO -Hypothesis aq_000: float64, float64 
+[2022-12-30 12:07:08,182]88 root -INFO -Hypothesis ar_000: float64, float64 
+[2022-12-30 12:07:08,198]88 root -INFO -Hypothesis as_000: float64, float64 
+[2022-12-30 12:07:08,213]88 root -INFO -Hypothesis at_000: float64, float64 
+[2022-12-30 12:07:08,229]88 root -INFO -Hypothesis au_000: float64, float64 
+[2022-12-30 12:07:08,245]88 root -INFO -Hypothesis av_000: float64, float64 
+[2022-12-30 12:07:08,263]88 root -INFO -Hypothesis ax_000: float64, float64 
+[2022-12-30 12:07:08,269]88 root -INFO -Hypothesis ay_000: float64, float64 
+[2022-12-30 12:07:08,284]88 root -INFO -Hypothesis ay_001: float64, float64 
+[2022-12-30 12:07:08,300]88 root -INFO -Hypothesis ay_002: float64, float64 
+[2022-12-30 12:07:08,316]88 root -INFO -Hypothesis ay_003: float64, float64 
+[2022-12-30 12:07:08,332]88 root -INFO -Hypothesis ay_004: float64, float64 
+[2022-12-30 12:07:08,348]88 root -INFO -Hypothesis ay_005: float64, float64 
+[2022-12-30 12:07:08,354]88 root -INFO -Hypothesis ay_006: float64, float64 
+[2022-12-30 12:07:08,362]88 root -INFO -Hypothesis ay_007: float64, float64 
+[2022-12-30 12:07:08,369]88 root -INFO -Hypothesis ay_008: float64, float64 
+[2022-12-30 12:07:08,376]88 root -INFO -Hypothesis ay_009: float64, float64 
+[2022-12-30 12:07:08,391]88 root -INFO -Hypothesis az_000: float64, float64 
+[2022-12-30 12:07:08,398]88 root -INFO -Hypothesis az_001: float64, float64 
+[2022-12-30 12:07:08,405]88 root -INFO -Hypothesis az_002: float64, float64 
+[2022-12-30 12:07:08,411]88 root -INFO -Hypothesis az_003: float64, float64 
+[2022-12-30 12:07:08,418]88 root -INFO -Hypothesis az_004: float64, float64 
+[2022-12-30 12:07:08,425]88 root -INFO -Hypothesis az_005: float64, float64 
+[2022-12-30 12:07:08,433]88 root -INFO -Hypothesis az_006: float64, float64 
+[2022-12-30 12:07:08,439]88 root -INFO -Hypothesis az_007: float64, float64 
+[2022-12-30 12:07:08,456]88 root -INFO -Hypothesis az_008: float64, float64 
+[2022-12-30 12:07:08,471]88 root -INFO -Hypothesis az_009: float64, float64 
+[2022-12-30 12:07:08,487]88 root -INFO -Hypothesis ba_000: float64, float64 
+[2022-12-30 12:07:08,495]88 root -INFO -Hypothesis ba_001: float64, float64 
+[2022-12-30 12:07:08,502]88 root -INFO -Hypothesis ba_002: float64, float64 
+[2022-12-30 12:07:08,509]88 root -INFO -Hypothesis ba_003: float64, float64 
+[2022-12-30 12:07:08,516]88 root -INFO -Hypothesis ba_004: float64, float64 
+[2022-12-30 12:07:08,523]88 root -INFO -Hypothesis ba_005: float64, float64 
+[2022-12-30 12:07:08,530]88 root -INFO -Hypothesis ba_006: float64, float64 
+[2022-12-30 12:07:08,536]88 root -INFO -Hypothesis ba_007: float64, float64 
+[2022-12-30 12:07:08,543]88 root -INFO -Hypothesis ba_008: float64, float64 
+[2022-12-30 12:07:08,548]88 root -INFO -Hypothesis ba_009: float64, float64 
+[2022-12-30 12:07:08,553]88 root -INFO -Hypothesis bb_000: float64, float64 
+[2022-12-30 12:07:08,560]88 root -INFO -Hypothesis bc_000: float64, float64 
+[2022-12-30 12:07:08,565]88 root -INFO -Hypothesis bd_000: float64, float64 
+[2022-12-30 12:07:08,571]88 root -INFO -Hypothesis be_000: float64, float64 
+[2022-12-30 12:07:08,577]88 root -INFO -Hypothesis bf_000: float64, float64 
+[2022-12-30 12:07:08,581]88 root -INFO -Hypothesis bg_000: float64, float64 
+[2022-12-30 12:07:08,588]88 root -INFO -Hypothesis bh_000: float64, float64 
+[2022-12-30 12:07:08,595]88 root -INFO -Hypothesis bi_000: float64, float64 
+[2022-12-30 12:07:08,602]88 root -INFO -Hypothesis bj_000: float64, float64 
+[2022-12-30 12:07:08,610]88 root -INFO -Hypothesis bs_000: float64, float64 
+[2022-12-30 12:07:08,617]88 root -INFO -Hypothesis bt_000: float64, float64 
+[2022-12-30 12:07:08,624]88 root -INFO -Hypothesis bu_000: float64, float64 
+[2022-12-30 12:07:08,631]88 root -INFO -Hypothesis bv_000: float64, float64 
+[2022-12-30 12:07:08,638]88 root -INFO -Hypothesis bx_000: float64, float64 
+[2022-12-30 12:07:08,645]88 root -INFO -Hypothesis by_000: float64, float64 
+[2022-12-30 12:07:08,652]88 root -INFO -Hypothesis bz_000: float64, float64 
+[2022-12-30 12:07:08,658]88 root -INFO -Hypothesis ca_000: float64, float64 
+[2022-12-30 12:07:08,665]88 root -INFO -Hypothesis cb_000: float64, float64 
+[2022-12-30 12:07:08,672]88 root -INFO -Hypothesis cc_000: float64, float64 
+[2022-12-30 12:07:08,679]88 root -INFO -Hypothesis cd_000: float64, float64 
+[2022-12-30 12:07:08,695]88 root -INFO -Hypothesis ce_000: float64, float64 
+[2022-12-30 12:07:08,701]88 root -INFO -Hypothesis ci_000: float64, float64 
+[2022-12-30 12:07:08,708]88 root -INFO -Hypothesis cj_000: float64, float64 
+[2022-12-30 12:07:08,712]88 root -INFO -Hypothesis ck_000: float64, float64 
+[2022-12-30 12:07:08,719]88 root -INFO -Hypothesis cl_000: float64, float64 
+[2022-12-30 12:07:08,723]88 root -INFO -Hypothesis cm_000: float64, float64 
+[2022-12-30 12:07:08,728]88 root -INFO -Hypothesis cn_000: float64, float64 
+[2022-12-30 12:07:08,744]88 root -INFO -Hypothesis cn_001: float64, float64 
+[2022-12-30 12:07:08,760]88 root -INFO -Hypothesis cn_002: float64, float64 
+[2022-12-30 12:07:08,765]88 root -INFO -Hypothesis cn_003: float64, float64 
+[2022-12-30 12:07:08,773]88 root -INFO -Hypothesis cn_004: float64, float64 
+[2022-12-30 12:07:08,780]88 root -INFO -Hypothesis cn_005: float64, float64 
+[2022-12-30 12:07:08,787]88 root -INFO -Hypothesis cn_006: float64, float64 
+[2022-12-30 12:07:08,794]88 root -INFO -Hypothesis cn_007: float64, float64 
+[2022-12-30 12:07:08,800]88 root -INFO -Hypothesis cn_008: float64, float64 
+[2022-12-30 12:07:08,807]88 root -INFO -Hypothesis cn_009: float64, float64 
+[2022-12-30 12:07:08,812]88 root -INFO -Hypothesis cp_000: float64, float64 
+[2022-12-30 12:07:08,817]88 root -INFO -Hypothesis cq_000: float64, float64 
+[2022-12-30 12:07:08,824]88 root -INFO -Hypothesis cs_000: float64, float64 
+[2022-12-30 12:07:08,831]88 root -INFO -Hypothesis cs_001: float64, float64 
+[2022-12-30 12:07:08,837]88 root -INFO -Hypothesis cs_002: float64, float64 
+[2022-12-30 12:07:08,843]88 root -INFO -Hypothesis cs_003: float64, float64 
+[2022-12-30 12:07:08,850]88 root -INFO -Hypothesis cs_004: float64, float64 
+[2022-12-30 12:07:08,857]88 root -INFO -Hypothesis cs_005: float64, float64 
+[2022-12-30 12:07:08,864]88 root -INFO -Hypothesis cs_006: float64, float64 
+[2022-12-30 12:07:08,871]88 root -INFO -Hypothesis cs_007: float64, float64 
+[2022-12-30 12:07:08,878]88 root -INFO -Hypothesis cs_008: float64, float64 
+[2022-12-30 12:07:08,883]88 root -INFO -Hypothesis cs_009: float64, float64 
+[2022-12-30 12:07:08,899]88 root -INFO -Hypothesis dd_000: float64, float64 
+[2022-12-30 12:07:08,905]88 root -INFO -Hypothesis de_000: float64, float64 
+[2022-12-30 12:07:08,911]88 root -INFO -Hypothesis df_000: float64, float64 
+[2022-12-30 12:07:08,926]88 root -INFO -Hypothesis dg_000: float64, float64 
+[2022-12-30 12:07:08,943]88 root -INFO -Hypothesis dh_000: float64, float64 
+[2022-12-30 12:07:08,947]88 root -INFO -Hypothesis di_000: float64, float64 
+[2022-12-30 12:07:08,951]88 root -INFO -Hypothesis dj_000: float64, float64 
+[2022-12-30 12:07:08,967]88 root -INFO -Hypothesis dk_000: float64, float64 
+[2022-12-30 12:07:08,982]88 root -INFO -Hypothesis dl_000: float64, float64 
+[2022-12-30 12:07:08,997]88 root -INFO -Hypothesis dm_000: float64, float64 
+[2022-12-30 12:07:09,013]88 root -INFO -Hypothesis dn_000: float64, float64 
+[2022-12-30 12:07:09,020]88 root -INFO -Hypothesis do_000: float64, float64 
+[2022-12-30 12:07:09,026]88 root -INFO -Hypothesis dp_000: float64, float64 
+[2022-12-30 12:07:09,033]88 root -INFO -Hypothesis dq_000: float64, float64 
+[2022-12-30 12:07:09,037]88 root -INFO -Hypothesis dr_000: float64, float64 
+[2022-12-30 12:07:09,041]88 root -INFO -Hypothesis ds_000: float64, float64 
+[2022-12-30 12:07:09,048]88 root -INFO -Hypothesis dt_000: float64, float64 
+[2022-12-30 12:07:09,055]88 root -INFO -Hypothesis du_000: float64, float64 
+[2022-12-30 12:07:09,061]88 root -INFO -Hypothesis dv_000: float64, float64 
+[2022-12-30 12:07:09,068]88 root -INFO -Hypothesis dx_000: float64, float64 
+[2022-12-30 12:07:09,073]88 root -INFO -Hypothesis dy_000: float64, float64 
+[2022-12-30 12:07:09,078]88 root -INFO -Hypothesis dz_000: float64, float64 
+[2022-12-30 12:07:09,093]88 root -INFO -Hypothesis ea_000: float64, float64 
+[2022-12-30 12:07:09,108]88 root -INFO -Hypothesis eb_000: float64, float64 
+[2022-12-30 12:07:09,114]88 root -INFO -Hypothesis ec_00: float64, float64 
+[2022-12-30 12:07:09,121]88 root -INFO -Hypothesis ed_000: float64, float64 
+[2022-12-30 12:07:09,127]88 root -INFO -Hypothesis ee_000: float64, float64 
+[2022-12-30 12:07:09,134]88 root -INFO -Hypothesis ee_001: float64, float64 
+[2022-12-30 12:07:09,141]88 root -INFO -Hypothesis ee_002: float64, float64 
+[2022-12-30 12:07:09,148]88 root -INFO -Hypothesis ee_003: float64, float64 
+[2022-12-30 12:07:09,155]88 root -INFO -Hypothesis ee_004: float64, float64 
+[2022-12-30 12:07:09,161]88 root -INFO -Hypothesis ee_005: float64, float64 
+[2022-12-30 12:07:09,168]88 root -INFO -Hypothesis ee_006: float64, float64 
+[2022-12-30 12:07:09,175]88 root -INFO -Hypothesis ee_007: float64, float64 
+[2022-12-30 12:07:09,181]88 root -INFO -Hypothesis ee_008: float64, float64 
+[2022-12-30 12:07:09,187]88 root -INFO -Hypothesis ee_009: float64, float64 
+[2022-12-30 12:07:09,193]88 root -INFO -Hypothesis ef_000: float64, float64 
+[2022-12-30 12:07:09,208]88 root -INFO -Hypothesis eg_000: float64, float64 
+[2022-12-30 12:07:09,223]147 root -INFO -Write reprt in yaml file
+[2022-12-30 12:07:09,292]152 root -INFO -Data validation artifact: DataValidationArtifact(report_file_path='/config/workspace/artifact/12302022__120633/data_validation/report.yaml')
+[2022-12-30 12:07:09,294]24 root -INFO ->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Transformation <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2022-12-30 12:07:10,172]75 root -INFO -Before resampling in training set Input: (28950, 170) Target:(28950,)
+[2022-12-30 12:07:16,242]77 root -INFO -After resampling in training set Input: (56136, 170) Target:(56136,)
+[2022-12-30 12:07:16,242]79 root -INFO -Before resampling in testing set Input: (7238, 170) Target:(7238,)
+[2022-12-30 12:07:16,932]81 root -INFO -After resampling in testing set Input: (14056, 170) Target:(14056,)
+[2022-12-30 12:07:17,047]56 root -INFO -Entered the save_object method of utils
+[2022-12-30 12:07:17,050]60 root -INFO -Exited the save_object method of utils
+[2022-12-30 12:07:17,050]56 root -INFO -Entered the save_object method of utils
+[2022-12-30 12:07:17,050]60 root -INFO -Exited the save_object method of utils
+[2022-12-30 12:07:17,050]112 root -INFO -Data transformation object DataTransformationArtifact(transform_object_path='/config/workspace/artifact/12302022__120633/data_transformation/transformer/transformer.pkl', transformed_train_path='/config/workspace/artifact/12302022__120633/data_transformation/transformed/train.npz', transformed_test_path='/config/workspace/artifact/12302022__120633/data_transformation/transformed/test.npz', target_encoder_path='/config/workspace/artifact/12302022__120633/data_transformation/target_encoder/target_encoder.pkl')
+[2022-12-30 12:07:17,052]18 root -INFO ->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Model Trainer <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2022-12-30 12:07:17,052]45 root -INFO -Loading train and test array.
+[2022-12-30 12:07:17,083]49 root -INFO -Splitting input and target feature from both train and test arr.
+[2022-12-30 12:07:17,084]53 root -INFO -Train the model
+[2022-12-30 12:07:30,711]56 root -INFO -Calculating f1 train score
+[2022-12-30 12:07:30,767]60 root -INFO -Calculating f1 test score
+[2022-12-30 12:07:30,786]64 root -INFO -train score:0.9999821858020842 and tests score 0.9805391379558887
+[2022-12-30 12:07:30,786]66 root -INFO -Checking if our model is underfitting or not
+[2022-12-30 12:07:30,786]71 root -INFO -Checking if our model is overfiiting or not
+[2022-12-30 12:07:30,787]78 root -INFO -Saving mode object
+[2022-12-30 12:07:30,787]56 root -INFO -Entered the save_object method of utils
+[2022-12-30 12:07:30,792]60 root -INFO -Exited the save_object method of utils
+[2022-12-30 12:07:30,792]82 root -INFO -Prepare the artifact
+[2022-12-30 12:07:30,792]85 root -INFO -Model trainer artifact: ModelTrainerArtifact(model_path='/config/workspace/artifact/12302022__120633/model_trainer/model/model.pkl', f1_train_score=0.9999821858020842, f1_test_score=0.9805391379558887)
+[2022-12-30 12:07:30,793]19 root -INFO ->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Model Evaluation <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2022-12-30 12:07:30,794]35 root -INFO -if saved model folder has model the we will compare which model is best trained or the model from saved model folder
+[2022-12-30 12:07:30,794]41 root -INFO -Model evaluation artifact: ModelEvaluationArtifact(is_model_accepted=True, improved_accuracy=None)
+[2022-12-30 12:07:30,794]14 root -INFO ->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Transformation <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2022-12-30 12:07:30,794]25 root -INFO -Loading transformer model and target encoder
+[2022-12-30 12:07:30,801]31 root -INFO -Saving model into model pusher directory
+[2022-12-30 12:07:30,801]56 root -INFO -Entered the save_object method of utils
+[2022-12-30 12:07:30,803]60 root -INFO -Exited the save_object method of utils
+[2022-12-30 12:07:30,803]56 root -INFO -Entered the save_object method of utils
+[2022-12-30 12:07:30,809]60 root -INFO -Exited the save_object method of utils
+[2022-12-30 12:07:30,809]56 root -INFO -Entered the save_object method of utils
+[2022-12-30 12:07:30,810]60 root -INFO -Exited the save_object method of utils
+[2022-12-30 12:07:30,810]38 root -INFO -Saving model in saved model dir
+[2022-12-30 12:07:30,810]56 root -INFO -Entered the save_object method of utils
+[2022-12-30 12:07:30,812]60 root -INFO -Exited the save_object method of utils
+[2022-12-30 12:07:30,812]56 root -INFO -Entered the save_object method of utils
+[2022-12-30 12:07:30,816]60 root -INFO -Exited the save_object method of utils
+[2022-12-30 12:07:30,816]56 root -INFO -Entered the save_object method of utils
+[2022-12-30 12:07:30,817]60 root -INFO -Exited the save_object method of utils
+[2022-12-30 12:07:30,817]49 root -INFO -Model pusher artifact: ModelPusherArtifact(pusher_model_dir='/config/workspace/artifact/12302022__120633/model_pusher/saved_models', saved_model_dir='saved_models')
+[2022-12-30 12:07:30,818]19 root -INFO ->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Model Evaluation <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2022-12-30 12:07:30,818]35 root -INFO -if saved model folder has model the we will compare which model is best trained or the model from saved model folder
+[2022-12-30 12:07:30,818]46 root -INFO -Finding location of transformer model and target encoder
+[2022-12-30 12:07:30,818]51 root -INFO -Previous trained objects of transformer, model and target encoder
+[2022-12-30 12:07:30,824]58 root -INFO -Currently trained model objects
+[2022-12-30 12:07:31,037]76 root -INFO -Accuracy using previous trained model: 0.8270676691729323
+[2022-12-30 12:07:31,082]85 root -INFO -Accuracy using current trained model: 0.8270676691729323
+[2022-12-30 12:07:31,083]87 root -INFO -Current trained model is not better than previous model
