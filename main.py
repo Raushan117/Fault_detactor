@@ -1,4 +1,4 @@
-from sensor.pipeline import start_training_pipeline
+from sensor.pipeline.training_pipeline import start_training_pipeline
 
 if __name__=="__main__":
      try:
