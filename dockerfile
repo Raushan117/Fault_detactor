@@ -1,6 +1,7 @@
 FROM python:3.8
 USER root
 RUN mkdir /app
+RUN apt-get update && apt-get install -y apt-utils && apt-get install -y curl
 COPY . /app/
 WORKDIR /app/
 RUN pip3 install -r requirements.txt
