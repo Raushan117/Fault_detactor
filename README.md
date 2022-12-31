@@ -13,4 +13,3 @@ python main.py
 ```
 
 ''
-.d
